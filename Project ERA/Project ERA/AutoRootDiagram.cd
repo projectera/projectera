@@ -1,0 +1,1259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ProjectERA.Client" Collapsed="true">
+    <Position X="17.5" Y="1.5" Width="1.5" />
+    <AssociationLine Name="ScreenManager" Type="ProjectERA.Services.Display.ScreenManager" FixedFromPoint="true">
+      <Path>
+        <Point X="18.188" Y="2.191" />
+        <Point X="18.188" Y="9.5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="TilesetManager" Type="ProjectERA.Services.Data.TilesetManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.688" Y="2.191" />
+        <Point X="18.688" Y="4.596" />
+        <Point X="19.25" Y="4.596" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="MapManager" Type="ProjectERA.Services.Data.MapManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.938" Y="2.191" />
+        <Point X="18.938" Y="3.096" />
+        <Point X="19.25" Y="3.096" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.146" Y="0.316" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="CurrentUserManager" Type="ProjectERA.Services.Data.DataManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.938" Y="2.191" />
+        <Point X="17.938" Y="7.948" />
+        <Point X="17.771" Y="7.948" Type="JumpStart" />
+        <Point X="17.605" Y="7.948" Type="JumpEnd" />
+        <Point X="16.083" Y="7.948" Type="JumpStart" />
+        <Point X="15.792" Y="7.948" Type="JumpEnd" />
+        <Point X="14.973" Y="7.948" Type="JumpStart" />
+        <Point X="14.807" Y="7.948" Type="JumpEnd" />
+        <Point X="11.833" Y="7.948" Type="JumpStart" />
+        <Point X="11.479" Y="7.948" Type="JumpEnd" />
+        <Point X="11" Y="7.948" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.074" Y="-0.317" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="NetworkManager" Type="ProjectERA.Services.Network.NetworkManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.688" Y="2.191" />
+        <Point X="17.688" Y="5.125" />
+        <Point X="17.25" Y="5.125" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="TextureManager" Type="ProjectERA.Services.Display.TextureManager" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.438" Y="2.191" />
+        <Point X="18.438" Y="5.184" />
+        <Point X="19.917" Y="5.184" Type="JumpStart" />
+        <Point X="20.083" Y="5.184" Type="JumpEnd" />
+        <Point X="24.125" Y="5.184" />
+        <Point X="24.125" Y="4.941" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>gAQAUAEIg4BBAwAAJAATAAAABgCQIAACQMAlIAAAMAQ=</HashCode>
+      <FileName>Client.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ScreenManager" />
+      <Property Name="InputManager" />
+      <Property Name="TilesetManager" />
+      <Property Name="MapManager" />
+      <Property Name="CurrentUserManager" />
+      <Property Name="NetworkManager" />
+      <Property Name="TextureManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProjectERA.Program" Collapsed="true">
+    <Position X="17.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Data.Achievement" Collapsed="true">
+    <Position X="32.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Achievement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Data.Avatar" Collapsed="true">
+    <Position X="4.5" Y="7.75" Width="1.5" />
+    <AssociationLine Name="Body" Type="ProjectERA.Data.AvatarBody" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="8.096" />
+        <Point X="4.283" Y="8.096" Type="JumpStart" />
+        <Point X="4.117" Y="8.096" Type="JumpEnd" />
+        <Point X="3.938" Y="8.096" />
+        <Point X="3.938" Y="10.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Stats" Type="ProjectERA.Data.AvatarStats" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="8.375" />
+        <Point X="6.375" Y="8.375" />
+        <Point X="6.375" Y="10.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Equipment" Type="ProjectERA.Data.AvatarEquipment" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="8.25" />
+        <Point X="7.688" Y="8.25" />
+        <Point X="7.688" Y="9.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>gBIAAADiAgAAAAAAgYAJGAwCJEIAAoCMAAAYAgBAUAA=</HashCode>
+      <FileName>Data\Avatar.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Body" />
+      <Property Name="Stats" />
+      <Property Name="Equipment" />
+      <Property Name="Synths" />
+      <Property Name="Inventory" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProjectERA.Data.AvatarBody" Collapsed="true">
+    <Position X="3.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAEgAAAAABAABAQAAQgAAgAQAAIAAAAIgIAABAAIA=</HashCode>
+      <FileName>Data\AvatarBody.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Data.AvatarEquipment" Collapsed="true">
+    <Position X="6.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIBAAEAACACAoQAFAIQAAABAAIMAQwECASAAAJBAAA=</HashCode>
+      <FileName>Data\AvatarEquipment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Extra" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProjectERA.Data.AvatarInventory" Collapsed="true">
+    <Position X="4.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAIAAQQBAAAA=</HashCode>
+      <FileName>Data\AvatarInventory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProjectERA.Data.AvatarStats" Collapsed="true">
+    <Position X="5.75" Y="10.75" Width="1.5" />
+    <AssociationLine Name="States" Type="ProjectERA.Data.BattlerModifier" FixedFromPoint="true">
+      <Path>
+        <Point X="6.438" Y="11.312" />
+        <Point X="6.438" Y="12" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.811" Y="0.276" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Buffs" Type="ProjectERA.Data.BattlerModifier" FixedFromPoint="true">
+      <Path>
+        <Point X="6.562" Y="11.312" />
+        <Point X="6.562" Y="12" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.143" Y="0.277" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BEAAGAAAAAAAgAACSAACkEAEggBAAAABAAAABgBhAQA=</HashCode>
+      <FileName>Data\AvatarStats.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="States" />
+      <Property Name="Buffs" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ProjectERA.Data.AvatarSynths" Collapsed="true">
+    <Position X="2.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAcBIKMIDQSAAIBBCQRUAgCRCAJkCABQAAEBgQBgAAA=</HashCode>
+      <FileName>Data\AvatarSynths.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Data.BattlerModifier" Collapsed="true">
+    <Position X="5.75" Y="12" Width="1.5" />
+    <AssociationLine Name="Restriction" Type="ERAUtils.Enum.ActionRestriction">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="0.139" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Flags" Type="ERAUtils.Enum.BattlerModifierFlags" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="12.562" />
+        <Point X="7" Y="13.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.767" Y="0.188" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BAAAJACAxAIAAAgCAAhAAAQEAAQAAAAAAACAgABIEQA=</HashCode>
+      <FileName>Data\BattlerModifier.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Restriction" />
+      <Property Name="Flags" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProjectERA.Data.Dialogue" Collapsed="true">
+    <Position X="9.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Data\Dialogue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Data.Effort" Collapsed="true">
+    <Position X="32.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Effort.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Data.Equipment" Collapsed="true">
+    <Position X="11" Y="9.5" Width="1.5" />
+    <AssociationLine Name="BattlerEquipment" Type="ProjectERA.Data.BattlerEquipment" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.125" Y="10.191" />
+        <Point X="12.125" Y="10.52" />
+        <Point X="12.625" Y="10.52" />
+        <Point X="12.625" Y="10.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.425" Y="0.145" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAABCAAJAAABAwIAAIACQAAAAAAAAAAAQAAAQBAgJA=</HashCode>
+      <FileName>Data\Equipment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+      <Property Name="Part" />
+      <Property Name="ElementType" />
+      <Property Name="BattlerEquipment" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProjectERA.Data.Interactable" Collapsed="true">
+    <Position X="4.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>NBQC7BEEIAACEVYIABhAgIRBSAJAACEAARAKAgFQAAA=</HashCode>
+      <FileName>Data\Interactable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProjectERA.Data.Item" Collapsed="true">
+    <Position X="11" Y="13" Width="1.5" />
+    <AssociationLine Name="ItemType" Type="ERAUtils.Enum.ItemType">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.003" Y="0.084" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgQBIACAAAAAAAAAkABAAAQAAggAAgMCAAAAAABAQpA=</HashCode>
+      <FileName>Data\Item.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ItemType" />
+      <Property Name="ItemFlags" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProjectERA.Data.Monster" Collapsed="true">
+    <Position X="2.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Monster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Data.Player" Collapsed="true">
+    <Position X="6.5" Y="6.25" Width="1.5" />
+    <AssociationLine Name="Avatars" Type="ProjectERA.Data.Avatar" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="6.941" />
+        <Point X="7" Y="7.812" />
+        <Point X="6" Y="7.812" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="PrivateDialogue" Type="ProjectERA.Data.Dialogue">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.167" Y="0.124" Height="0.182" Width="1.223" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAIDEAAAAAAABACAwAgAAAAAAgAAAAAABAAQk=</HashCode>
+      <FileName>Data\Player.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PrivateDialogue" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Avatars" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ProjectERA.Data.Settings" Collapsed="true">
+    <Position X="27.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Settings.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="LogSeverity" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProjectERA.Data.Update.Changable" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAABAAAAAAAAAAAAAAAAAAgAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Update\Changable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="ProjectERA.Data.Update.Change&lt;valType&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAAAAAABAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Update\Change.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ProjectERA.Data.Update.Change" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAAAAAABAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Update\Change.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.269" Collapsed="true" />
+  </Class>
+  <Class Name="ProjectERA.Graphics.DefaultRendertarget" Collapsed="true">
+    <Position X="10" Y="3.25" Width="1.5" />
+    <AssociationLine Name="_childRendertargets" Type="ProjectERA.Graphics.DefaultRendertarget" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10" Y="3.495" />
+        <Point X="9.625" Y="3.495" />
+        <Point X="9.625" Y="4.316" />
+        <Point X="10.375" Y="4.316" />
+        <Point X="10.375" Y="3.941" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.262" Y="0.118" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_childComponents" Type="ProjectERA.Graphics.DrawableComponent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.156" Y="3.25" />
+        <Point X="11.156" Y="2.188" />
+        <Point X="10.25" Y="2.188" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.246" Y="0.11" Height="0.182" Width="1.387" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQkEAAABAAIA4AAAAAABEEAAAAABAAEABAAAAAAAAQ=</HashCode>
+      <FileName>Graphics\DefaultRendertarget.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_childRendertargets" />
+      <Field Name="_childComponents" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ProjectERA.Graphics.DrawableComponent" Collapsed="true">
+    <Position X="8.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCEAAAAAAAEwAQBAEAAQAAAApAAAAAAAAGAAAAgAQ=</HashCode>
+      <FileName>Graphics\DrawableComponent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProjectERA.Graphics.ScreenRendertarget" Collapsed="true">
+    <Position X="10" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAABAAAAAAIAA=</HashCode>
+      <FileName>Graphics\ScreenRendertarget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Graphics.Sprite.Avatar" Collapsed="true">
+    <Position X="12.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAAAAAAwAAAAAAAAFAAAAAIAAgAAAAIAIAAAQ=</HashCode>
+      <FileName>Graphics\Sprite\Avatar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProjectERA.Graphics.Sprite.DebugOverlay" Collapsed="true">
+    <Position X="14.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAMAAAAgAAAwAAAAAAAAAAAAAABQgBAIAAAAAAQAQ=</HashCode>
+      <FileName>Graphics\Sprite\DebugOverlay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Graphics.Sprite.Interactable" Collapsed="true">
+    <Position X="3.25" Y="3.25" Width="1.5" />
+    <AssociationLine Name="Direction" Type="ERAUtils.Enum.Direction" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.25" Y="3.562" />
+        <Point X="2.875" Y="3.562" />
+        <Point X="2.875" Y="5.625" />
+        <Point X="3.25" Y="5.625" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.671" Y="0.429" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ABQAmEgAGUAAAwAgACgAAAJgAEAAIiFgAAgIIAAgAJQ=</HashCode>
+      <FileName>Graphics\Sprite\Interactable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Direction" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProjectERA.Graphics.Sprite.SplattedTile" Collapsed="true">
+    <Position X="23.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAACAEAAEQAAAAAgAAAAAQAAAAAAAAIACAAAAAAAAAA=</HashCode>
+      <FileName>Graphics\Sprite\SplattedTile.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Tiles" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ProjectERA.Graphics.Sprite.Tile" Collapsed="true">
+    <Position X="23.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAgEAAAAAARAAAAAAQAACAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Graphics\Sprite\Tile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Graphics.Sprite.TileMap" Collapsed="true">
+    <Position X="7.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAZYEACJDAEAAwAAQAAQQEAgBBAAKwBgAACiAAAIBAQ=</HashCode>
+      <FileName>Graphics\Sprite\TileMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Logic.GameAvatar" Collapsed="true">
+    <Position X="30.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAIAAAAEAAFAgACABAAAAAAAAAAAAAAAABAAgA=</HashCode>
+      <FileName>Logic\GameAvatar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Logic.GameBattler" Collapsed="true">
+    <Position X="30.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\GameBattler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Logic.GameInteractable" Collapsed="true">
+    <Position X="30.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAACAAQAYEAAAAAAAAAAAAAAAAAAIQAAAAAAAAAA=</HashCode>
+      <FileName>Logic\GameInteractable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Logic.GamePlayer" Collapsed="true">
+    <Position X="30.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\GamePlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Pool.Pool&lt;T&gt;" Collapsed="true">
+    <Position X="30.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAQAAAAEAAAQCAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pool\Pool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Screen.DummyScreen" Collapsed="true">
+    <Position X="19.25" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAAAAAEAAwAAAAAQAAAAAAAAABAAAAAAAABIEAQ=</HashCode>
+      <FileName>Screen\DummyScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Screen.LoadingPop" Collapsed="true">
+    <Position X="12.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAQAAAEgAkAAAAABAEAAAAAAAAAYAAgAAAAAQ=</HashCode>
+      <FileName>Screen\ProgressLoadingScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Screen.SplashScreen" Collapsed="true">
+    <Position X="17" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAACAAwAAAgAAAAAAAIAAIAAAAAABgAAAAAAAgAQ=</HashCode>
+      <FileName>Screen\SplashScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Services.Data.ContentDatabase" Collapsed="true">
+    <Position X="15.75" Y="6.75" Width="1.5" />
+    <AssociationLine Name="_spinWait" Type="System.Threading.SpinWait" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.875" Y="7.312" />
+        <Point X="16.875" Y="7.465" />
+        <Point X="17.404" Y="7.465" />
+        <Point X="17.404" Y="5.846" />
+        <Point X="16.5" Y="5.846" />
+        <Point X="16.5" Y="6" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.31" Y="-1.758" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_weapons" Type="ProjectERA.Data.Equipment" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.75" Y="7.243" />
+        <Point X="14.973" Y="7.243" Type="JumpStart" />
+        <Point X="14.807" Y="7.243" Type="JumpEnd" />
+        <Point X="12.052" Y="7.243" Type="JumpStart" />
+        <Point X="11.885" Y="7.243" Type="JumpEnd" />
+        <Point X="11.75" Y="7.243" />
+        <Point X="11.75" Y="9.5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_armors" Type="ProjectERA.Data.Equipment" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.75" Y="7.111" />
+        <Point X="14.973" Y="7.111" Type="JumpStart" />
+        <Point X="14.807" Y="7.111" Type="JumpEnd" />
+        <Point X="12.052" Y="7.111" Type="JumpStart" />
+        <Point X="11.885" Y="7.111" Type="JumpEnd" />
+        <Point X="11.688" Y="7.111" />
+        <Point X="11.688" Y="9.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.889" Y="0.143" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_accessoiries" Type="ProjectERA.Data.Equipment" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.75" Y="6.97" />
+        <Point X="14.973" Y="6.97" Type="JumpStart" />
+        <Point X="14.807" Y="6.97" Type="JumpEnd" />
+        <Point X="12.052" Y="6.97" Type="JumpStart" />
+        <Point X="11.885" Y="6.97" Type="JumpEnd" />
+        <Point X="11.625" Y="6.97" />
+        <Point X="11.625" Y="9.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.255" Y="0.593" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_keyItems" Type="ProjectERA.Data.Equipment" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.75" Y="6.829" />
+        <Point X="14.973" Y="6.829" Type="JumpStart" />
+        <Point X="14.807" Y="6.829" Type="JumpEnd" />
+        <Point X="12.052" Y="6.829" Type="JumpStart" />
+        <Point X="11.885" Y="6.829" Type="JumpEnd" />
+        <Point X="11.562" Y="6.829" />
+        <Point X="11.562" Y="9.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.13" Y="0.368" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_states" Type="ProjectERA.Data.BattlerModifier" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16" Y="7.312" />
+        <Point X="16" Y="12.5" />
+        <Point X="14.973" Y="12.5" Type="JumpStart" />
+        <Point X="14.807" Y="12.5" Type="JumpEnd" />
+        <Point X="11.833" Y="12.5" Type="JumpStart" />
+        <Point X="11.667" Y="12.5" Type="JumpEnd" />
+        <Point X="9.552" Y="12.5" Type="JumpStart" />
+        <Point X="9.385" Y="12.5" Type="JumpEnd" />
+        <Point X="7.25" Y="12.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.426" Y="0.157" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_buffs" Type="ProjectERA.Data.BattlerModifier" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.875" Y="7.312" />
+        <Point X="15.875" Y="12.375" />
+        <Point X="14.973" Y="12.375" Type="JumpStart" />
+        <Point X="14.807" Y="12.375" Type="JumpEnd" />
+        <Point X="11.833" Y="12.375" Type="JumpStart" />
+        <Point X="11.667" Y="12.375" Type="JumpEnd" />
+        <Point X="9.552" Y="12.375" Type="JumpStart" />
+        <Point X="9.385" Y="12.375" Type="JumpEnd" />
+        <Point X="7.25" Y="12.375" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.42" Y="0.302" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>idQgkAABQ1gANRiDgEYEjMBVgJGVwFhCGAKBASqBklE=</HashCode>
+      <FileName>Services\Data\ContentDatabase.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_spinWait" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="_weapons" />
+      <Field Name="_armors" />
+      <Field Name="_accessoiries" />
+      <Field Name="_keyItems" />
+      <Field Name="_states" />
+      <Field Name="_buffs" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ProjectERA.Services.Data.DataManager" Collapsed="true">
+    <Position X="9.5" Y="7.5" Width="1.5" />
+    <AssociationLine Name="_changes" Type="ProjectERA.Data.Update.IApplyable">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.851" Y="0.407" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IAIAAAAAAAAAAQAAAAgAIAAAQAAAAACBAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Data\DataManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_changes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ProjectERA.Services.Data.FontCollector" Collapsed="true">
+    <Position X="20" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAgAAAAAAgAAAw=</HashCode>
+      <FileName>Services\Data\FontCollector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Services.Data.MapData" Collapsed="true">
+    <Position X="19.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoUMIIAIBAOCFwBAgMwAAERAwBQAAIBEAQACAABICAA=</HashCode>
+      <FileName>Services\Data\MapData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MapType" />
+      <Property Name="MapSettings" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProjectERA.Services.Data.MapSettings" Collapsed="true">
+    <Position X="22" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAQAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Services\Data\MapData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Services.Data.MapManager" Collapsed="true">
+    <Position X="19.25" Y="2.75" Width="1.5" />
+    <AssociationLine Name="_dataCache" Type="ProjectERA.Services.Data.MapData">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.497" Y="0.262" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEACAAAQAACAAAAAAAAAAAACACBAAAAgAAEIA=</HashCode>
+      <FileName>Services\Data\MapManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_tilesetManager" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="_dataCache" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ProjectERA.Services.Data.TilesetData" Collapsed="true">
+    <Position X="19.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAJICIABMCBQAkgMgBBAQAhAWAANBIAACAABEAaAA=</HashCode>
+      <FileName>Services\Data\TilesetData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="LoadResult" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProjectERA.Services.Data.TilesetManager" Collapsed="true">
+    <Position X="19.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAQBAAAAAAAAAAAiCIAAiBAAAAAAIAIA=</HashCode>
+      <FileName>Services\Data\TilesetManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_textureManager" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="_dataCache" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ProjectERA.Services.Data.Serialization.SerializableAccessoiries" Collapsed="true">
+    <Position X="25" Y="15.25" Width="1.5" />
+    <AssociationLine Name="Accessoiries" Type="ProjectERA.Data.Equipment" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="25.375" Y="15.25" />
+        <Point X="25.375" Y="14.074" />
+        <Point X="23.047" Y="14.074" />
+        <Point X="23.047" Y="11.414" />
+        <Point X="18.958" Y="11.414" Type="JumpStart" />
+        <Point X="18.792" Y="11.414" Type="JumpEnd" />
+        <Point X="18.271" Y="11.414" Type="JumpStart" />
+        <Point X="18.104" Y="11.414" Type="JumpEnd" />
+        <Point X="17.833" Y="11.414" Type="JumpStart" />
+        <Point X="17.667" Y="11.414" Type="JumpEnd" />
+        <Point X="16.083" Y="11.414" Type="JumpStart" />
+        <Point X="15.792" Y="11.414" Type="JumpEnd" />
+        <Point X="15.573" Y="11.414" />
+        <Point X="15.573" Y="10.062" />
+        <Point X="14.973" Y="10.062" Type="JumpStart" />
+        <Point X="14.807" Y="10.062" Type="JumpEnd" />
+        <Point X="12.5" Y="10.062" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.171" Y="0.48" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAACBAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Data\Serialization\SerializableAccessories.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Accessoiries" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ProjectERA.Services.Data.Serialization.SerializableArmors" Collapsed="true">
+    <Position X="27.25" Y="15.25" Width="1.5" />
+    <AssociationLine Name="Armors" Type="ProjectERA.Data.Equipment" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="27.625" Y="15.25" />
+        <Point X="27.625" Y="13.921" />
+        <Point X="23.174" Y="13.921" />
+        <Point X="23.174" Y="11.312" />
+        <Point X="18.958" Y="11.312" Type="JumpStart" />
+        <Point X="18.792" Y="11.312" Type="JumpEnd" />
+        <Point X="18.271" Y="11.312" Type="JumpStart" />
+        <Point X="18.104" Y="11.312" Type="JumpEnd" />
+        <Point X="17.833" Y="11.312" Type="JumpStart" />
+        <Point X="17.667" Y="11.312" Type="JumpEnd" />
+        <Point X="16.083" Y="11.312" Type="JumpStart" />
+        <Point X="15.792" Y="11.312" Type="JumpEnd" />
+        <Point X="15.673" Y="11.312" />
+        <Point X="15.673" Y="9.938" />
+        <Point X="14.973" Y="9.938" Type="JumpStart" />
+        <Point X="14.807" Y="9.938" Type="JumpEnd" />
+        <Point X="12.5" Y="9.938" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.282" Y="0.563" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAACBAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Services\Data\Serialization\SerializableArmors.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Armors" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ProjectERA.Services.Data.Serialization.SerializableBattlerModifiers" Collapsed="true">
+    <Position X="29.5" Y="15.25" Width="1.5" />
+    <AssociationLine Name="BattlerModifiers" Type="ProjectERA.Data.BattlerModifier" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="29.812" Y="15.941" />
+        <Point X="29.812" Y="17.52" />
+        <Point X="16.021" Y="17.52" Type="JumpStart" />
+        <Point X="15.854" Y="17.52" Type="JumpEnd" />
+        <Point X="15.583" Y="17.52" Type="JumpStart" />
+        <Point X="15.417" Y="17.52" Type="JumpEnd" />
+        <Point X="6.562" Y="17.52" />
+        <Point X="6.562" Y="12.562" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.128" Y="2.438" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAABAAAAAAAAAAAACBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Data\Serialization\SerializableBattlerModifiers.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="BattlerModifiers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ProjectERA.Services.Data.Serialization.SerializableColors" Collapsed="true">
+    <Position X="31.75" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAACBAAAAQAAAAgAAAAAA=</HashCode>
+      <FileName>Services\Data\Serialization\SerializableColors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Services.Data.Serialization.SerializableDatabaseContent&lt;T&gt;" Collapsed="true">
+    <Position X="27.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Data\Serialization\SerializableDatabaseContent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Services.Data.Serialization.SerializableWeapons" Collapsed="true">
+    <Position X="22.75" Y="15.25" Width="1.5" />
+    <AssociationLine Name="Weapons" Type="ProjectERA.Data.Equipment" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22.938" Y="15.25" />
+        <Point X="22.938" Y="11.502" />
+        <Point X="18.958" Y="11.502" Type="JumpStart" />
+        <Point X="18.792" Y="11.502" Type="JumpEnd" />
+        <Point X="18.271" Y="11.502" Type="JumpStart" />
+        <Point X="18.104" Y="11.502" Type="JumpEnd" />
+        <Point X="17.833" Y="11.502" Type="JumpStart" />
+        <Point X="17.667" Y="11.502" Type="JumpEnd" />
+        <Point X="16.083" Y="11.502" Type="JumpStart" />
+        <Point X="15.792" Y="11.502" Type="JumpEnd" />
+        <Point X="15.501" Y="11.502" />
+        <Point X="15.501" Y="10.188" />
+        <Point X="14.973" Y="10.188" Type="JumpStart" />
+        <Point X="14.807" Y="10.188" Type="JumpEnd" />
+        <Point X="12.5" Y="10.188" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.292" Y="0.408" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAACBAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Services\Data\Serialization\SerializableWeapons.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Weapons" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ProjectERA.Services.Display.Camera3D" Collapsed="true">
+    <Position X="5.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CSQAEACAAAAAAzCgGAAQAAgQIAggAAAAAgEAkAAQAgU=</HashCode>
+      <FileName>Services\Display\Camera3D.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_random" />
+      <Property Name="Focus" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProjectERA.Services.Display.GameScreen" Collapsed="true">
+    <Position X="17" Y="12.75" Width="1.5" />
+    <AssociationLine Name="NetworkManager" Type="ProjectERA.Services.Network.NetworkManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.5" Y="12.884" />
+        <Point X="18.875" Y="12.884" />
+        <Point X="18.875" Y="5.375" />
+        <Point X="18.271" Y="5.375" Type="JumpStart" />
+        <Point X="18.105" Y="5.375" Type="JumpEnd" />
+        <Point X="18.021" Y="5.375" Type="JumpStart" />
+        <Point X="17.855" Y="5.375" Type="JumpEnd" />
+        <Point X="17.25" Y="5.375" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="ScreenRendertarget" Type="ProjectERA.Graphics.ScreenRendertarget" ManuallyRouted="true">
+      <Path>
+        <Point X="17" Y="13.031" />
+        <Point X="14.89" Y="13.031" />
+        <Point X="14.89" Y="6.127" />
+        <Point X="12.052" Y="6.127" Type="JumpStart" />
+        <Point X="11.885" Y="6.127" Type="JumpEnd" />
+        <Point X="10.75" Y="6.127" />
+        <Point X="10.75" Y="5.441" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Camera" Type="ProjectERA.Services.Display.Camera3D" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.5" Y="13.312" />
+        <Point X="17.5" Y="14.749" />
+        <Point X="6.645" Y="14.749" Type="JumpStart" />
+        <Point X="6.479" Y="14.749" Type="JumpEnd" />
+        <Point X="2.062" Y="14.749" />
+        <Point X="2.062" Y="2.558" />
+        <Point X="5.167" Y="2.558" Type="JumpStart" />
+        <Point X="5.333" Y="2.558" Type="JumpEnd" />
+        <Point X="5.875" Y="2.558" />
+        <Point X="5.875" Y="3.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IhwKMACAACBAIwAHEAITQAgBJggAAihBAAAGIAYARAQ=</HashCode>
+      <FileName>Services\Display\GameScreen.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ScreenManager" />
+      <Property Name="InputManager" />
+      <Property Name="NetworkManager" />
+      <Property Name="ScreenState" />
+      <Property Name="ScreenRendertarget" />
+      <Property Name="Camera" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProjectERA.Services.Display.PositionFocus" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Display\PositionFocus.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ProjectERA.Services.Display.ScreenManager" Collapsed="true">
+    <Position X="17" Y="9.5" Width="1.5" />
+    <AssociationLine Name="InputManager" Type="ProjectERA.Services.Input.InputManager" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.312" Y="9.5" />
+        <Point X="18.312" Y="8.982" />
+        <Point X="18.792" Y="8.982" Type="JumpStart" />
+        <Point X="18.958" Y="8.982" Type="JumpEnd" />
+        <Point X="26.164" Y="8.982" Type="JumpStart" />
+        <Point X="26.458" Y="8.982" Type="JumpEnd" />
+        <Point X="28.23" Y="8.982" />
+        <Point X="28.23" Y="0.812" />
+        <Point X="27" Y="0.812" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="NetworkManager" Type="ProjectERA.Services.Network.NetworkManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.688" Y="9.5" />
+        <Point X="17.688" Y="5.688" />
+        <Point X="17.25" Y="5.688" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="TextureManager" Type="ProjectERA.Services.Display.TextureManager" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.438" Y="9.5" />
+        <Point X="18.438" Y="9.123" />
+        <Point X="18.792" Y="9.123" Type="JumpStart" />
+        <Point X="18.958" Y="9.123" Type="JumpEnd" />
+        <Point X="26.247" Y="9.123" />
+        <Point X="26.247" Y="4.562" />
+        <Point X="25" Y="4.562" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAQAFBAgFEAEIwAABIACABAAAAhACgBAZAAEIgAAAEQ=</HashCode>
+      <FileName>Services\Display\ScreenManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="InputManager" />
+      <Property Name="NetworkManager" />
+      <Property Name="TextureManager" />
+      <Property Name="SpriteFonts" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="_screens" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ProjectERA.Services.GameSettings" Collapsed="true">
+    <Position X="29" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAQCAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\GameSettings.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="LogSeverity" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProjectERA.Services.Input.InputManager" Collapsed="true">
+    <Position X="25.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Input\InputManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Keyboard" />
+      <Property Name="Mouse" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProjectERA.Services.Input.KeyboardInputComponent" Collapsed="true">
+    <Position X="24.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAABQABAIAAEgEgAAAACAAAAKRFGEACiAAQAAAQBA=</HashCode>
+      <FileName>Services\Input\InputManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_triggers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ProjectERA.Services.Input.MouseInputComponent" Collapsed="true">
+    <Position X="26.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAIAACBAEAkAAQIACAAAEIAAAAACAAAAAQAYBA=</HashCode>
+      <FileName>Services\Input\InputManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Services.Input.TriggerKey" Collapsed="true">
+    <Position X="24.75" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQQAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAIAAAA=</HashCode>
+      <FileName>Services\Input\InputManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Services.Network.NetworkManager" Collapsed="true">
+    <Position X="15.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BE6AAAAIAAwJEcEICAJAyAABAgACIAABAIIIghBAhEA=</HashCode>
+      <FileName>Services\Network\NetworkManager.Connection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Services.Display.TextureManager" Collapsed="true">
+    <Position X="23.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAABAAAACAQAAABQIAAAAgAAAAIAAAgAAAAAFEAA=</HashCode>
+      <FileName>Services\Display\TextureManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lidgren.Network.NetRandom" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ProjectERA.Services.Input.TextInputComponent" Collapsed="true">
+    <Position X="14.75" Y="19" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACYCAAAAAAhBAQCAAQEEBAAAAAAAACEAAEAQCAAACAA=</HashCode>
+      <FileName>Services\Input\TextInputComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Protocols.Protocol" Collapsed="true">
+    <Position X="31.75" Y="6.5" Width="1.5" />
+    <AssociationLine Name="Instances" Type="ProjectERA.Protocols.Protocol" ManuallyRouted="true">
+      <Path>
+        <Point X="32.267" Y="7.062" />
+        <Point X="32.267" Y="7.693" />
+        <Point X="32.744" Y="7.693" />
+        <Point X="32.744" Y="7.062" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.657" Y="0.37" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CAYAEAABhCCAAQEEAAAECQABAAAAAAAAQEAAAAAAAAA=</HashCode>
+      <FileName>Services\Network\Protocol.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Connection" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Instances" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProjectERA.Connection" Collapsed="true">
+    <Position X="34.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAkAAAABCAEASDAACgJgBAAACAAAGAAAAAAAAAQAAA=</HashCode>
+      <FileName>Services\Network\Connection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProjectERA.Screen.LoadingPopText" Collapsed="true">
+    <Position X="10.25" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Screen\LoadingPopText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectERA.Screen.LoginScreen" Collapsed="true">
+    <Position X="14.75" Y="15.25" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="ProjectERA.Screen.LoginScreen.LoginAction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Screen\LoginScreen.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <AssociationLine Name="_usernameInput" Type="ProjectERA.Services.Input.TextInputComponent">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.06" Y="0.31" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CQQgAAAAAwAAgwAAAQAQAQAgAAAEAAqQAAgQAAAAAgA=</HashCode>
+      <FileName>Screen\LoginScreen.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_passwordInput" />
+      <Field Name="_usernameInput" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProjectERA.Screen.ProgressLoadingScreen" Collapsed="true">
+    <Position X="12.25" Y="15.25" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="ProjectERA.Screen.ProgressLoadingScreen.LoadingContent" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Screen\ProgressLoadingScreen.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>FQQAFBCkAAQAEwIEAAAAACAABACAAAgQAIkAgACUAAQ=</HashCode>
+      <FileName>Screen\ProgressLoadingScreen.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_loadingPops" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Struct Name="ProjectERA.Data.BattlerEquipment" Collapsed="true">
+    <Position X="12.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAgAACCAACAAAAAABAAAAAAAAAAgBBAAA=</HashCode>
+      <FileName>Data\BattlerEquipment.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ProjectERA.Graphics.AvatarVertex" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgABAAAABAAAAAAAAAIA=</HashCode>
+      <FileName>Graphics\AvatarVertex.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="ProjectERA.Graphics.SplattedTileVertex" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAEAAEAAAAgAAAAQAgABAAAABQAAAAAAAAIA=</HashCode>
+      <FileName>Graphics\SplattedTileVertex.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="System.Threading.SpinWait" Collapsed="true">
+    <Position X="15.75" Y="6" Width="1.5" />
+    <TypeIdentifier />
+  </Struct>
+  <Interface Name="ProjectERA.Data.Update.IApplyable" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Update\IApplyable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ProjectERA.Services.Display.IFocusable" Collapsed="true">
+    <Position X="5.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Display\IFocusable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ERAUtils.Enum.ActionRestriction" Collapsed="true">
+    <Position X="4.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAAAACAAAAAAAAAAAAAAAgAAAgAAAAAIAAAAEAAAg=</HashCode>
+      <FileName>Data\Enum\ActionRestriction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ERAUtils.Enum.BattlerModifierFlags" Collapsed="true">
+    <Position X="6.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAACAAAgAAAAABIAAAAAAAAAAAQgAAABAEAAAA=</HashCode>
+      <FileName>Data\Enum\BattlerModifierFlags.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ERAUtils.Enum.DataLoadResult" Collapsed="true">
+    <Position X="21.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAEAAAAAAAAAAAAABAAAABAAAAAAAACAEAAAA=</HashCode>
+      <FileName>Data\Enum\DataLoadResult.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ERAUtils.Enum.Direction" Collapsed="true">
+    <Position X="3.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACCCABABAAAAAAAAAAAAAAAAEAAAAAAAAIAAAAEBAAQ=</HashCode>
+      <FileName>Data\Enum\Direction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ERAUtils.Enum.ElementType" Collapsed="true">
+    <Position X="9.25" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEBAIIAAQiAAAABCQAAAgAQCABkAABAAAABAAEAAAA=</HashCode>
+      <FileName>Data\Enum\ElementType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ERAUtils.Enum.EquipmentPart" Collapsed="true">
+    <Position X="9.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIBAAEAAAAAAIQAFAIQAAAAAAAIAAAACASAAAEAAAA=</HashCode>
+      <FileName>Data\Enum\EquipmentPart.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ERAUtils.Enum.EquipmentType" Collapsed="true">
+    <Position X="9.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAEAAAAAAgAAAAAAAAACAAgAEAAAAAEAAAA=</HashCode>
+      <FileName>Data\Enum\EquipmentType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ERAUtils.Enum.InteractableType" Collapsed="true">
+    <Position X="3.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAKAAACQAAAAAADCAAAAAAAAAAAEAwAA=</HashCode>
+      <FileName>Data\Enum\InteractableType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ERAUtils.Enum.ItemFlags" Collapsed="true">
+    <Position X="10.25" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAiAAAAAAAAABAAAAAgAAAAIAAAAAAAAAFACAA=</HashCode>
+      <FileName>Data\Enum\ItemFlags.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ERAUtils.Enum.ItemType" Collapsed="true">
+    <Position X="12" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAEAAAAAAAAAAAAAAAAAAAgAEAAAAAEAAAA=</HashCode>
+      <FileName>Data\Enum\ItemType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ProjectERA.Services.Data.MapType" Collapsed="true">
+    <Position X="22" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYKAAAAAAggAgAIIAAAAAAAAAAAFQAgAAgAAAAAQAAA=</HashCode>
+      <FileName>Services\Data\MapType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ProjectERA.Services.Data.TilesetFlags" Collapsed="true">
+    <Position X="21.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAACQAAAAAAAAAAAASAAAAAAAAAAAAEgAAI=</HashCode>
+      <FileName>Services\Data\TilesetFlags.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ProjectERA.Services.Display.ScreenState" Collapsed="true">
+    <Position X="19.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAACAgAAAIAAAEAAA=</HashCode>
+      <FileName>Services\Display\ScreenState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ProjectERA.Services.Input.MouseButton" Collapsed="true">
+    <Position X="26.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACACQAAAAAAA=</HashCode>
+      <FileName>Services\Input\MouseButton.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ERAUtils.Logger.Severity" Collapsed="true">
+    <Position X="27.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

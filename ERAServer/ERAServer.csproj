@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC67511C-54B6-4772-9CE7-8D1BE624299A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ERAServer</RootNamespace>
+    <AssemblyName>ERAServer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CONSOLE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;CONSOLE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ERAServer.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FSharp.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\FSharp.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IronJS">
+      <HintPath>.\IronJS.dll</HintPath>
+    </Reference>
+    <Reference Include="IronJS.Runtime">
+      <HintPath>.\IronJS.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=1.0.0.4098, Culture=neutral, PublicKeyToken=f686731cfb9cc103, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=1.0.0.4098, Culture=neutral, PublicKeyToken=f686731cfb9cc103, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Asset.cs" />
+    <Compile Include="Data\Blueprint\MongoScript.cs" />
+    <Compile Include="Data\Blueprint\TalentTree.cs" />
+    <Compile Include="Data\Currency.cs" />
+    <Compile Include="Data\GeneratedData.cs" />
+    <Compile Include="Data\AI\InteractableClass.cs" />
+    <Compile Include="Data\Region.cs" />
+    <Compile Include="Protocols\Client\Asset.cs" />
+    <Compile Include="Scripts\MessageController.cs" />
+    <Compile Include="Scripts\Packages\BasePackage.cs" />
+    <Compile Include="Scripts\Packages\ComponentPackages\InteractableInfo.cs" />
+    <Compile Include="Scripts\Packages\IPackage.cs" />
+    <Compile Include="Scripts\Packages\JavascriptPackage.cs" />
+    <Compile Include="Services\Listeners\Clients.cs" />
+    <Compile Include="Connection.cs" />
+    <Compile Include="Services\DataManager.cs" />
+    <Compile Include="Data\AI\InteractableAppearance.Javascript.cs" />
+    <Compile Include="Data\AI\InteractableBodyPart.cs" />
+    <Compile Include="Data\AI\InteractableMovement.cs" />
+    <Compile Include="Data\Blueprint\Achievement.cs" />
+    <Compile Include="Data\Blueprint\BattlerAnimation.cs" />
+    <Compile Include="Data\Blueprint\BattlerClass.cs" />
+    <Compile Include="Data\Blueprint\BattlerConsumable.cs" />
+    <Compile Include="Data\Blueprint\BattlerValues.cs" />
+    <Compile Include="Data\Blueprint\BattlerModifier.cs" />
+    <Compile Include="Data\Blueprint\Description.cs" />
+    <Compile Include="Data\Blueprint\Effort.cs" />
+    <Compile Include="Data\Blueprint\Equipment.cs" />
+    <Compile Include="Data\Blueprint\Consumable.cs" />
+    <Compile Include="Data\Blueprint\BattlerRace.cs" />
+    <Compile Include="Data\Blueprint\Skill.cs" />
+    <Compile Include="Data\Blueprint\Talent.cs" />
+    <Compile Include="Data\Dialogue.cs" />
+    <Compile Include="Data\DialogueMessage.cs" />
+    <Compile Include="Data\DialoguePage.cs" />
+    <Compile Include="Data\Effort.cs" />
+    <Compile Include="Data\Faction.cs" />
+    <Compile Include="Data\AI\InteractableComponent.cs" />
+    <Compile Include="Data\AI\InteractableBattler.cs" />
+    <Compile Include="Data\Friend.cs" />
+    <Compile Include="Data\GeneralCache.cs" />
+    <Compile Include="Data\Interactable.Generate.cs" />
+    <Compile Include="Data\InteractableConsumable.cs" />
+    <Compile Include="Data\InteractableEquipment.cs" />
+    <Compile Include="Data\Guild.cs" />
+    <Compile Include="Data\AI\InteractableGuildMember.cs" />
+    <Compile Include="Data\Interactable.cs" />
+    <Compile Include="Data\AI\InteractableAppearance.cs" />
+    <Compile Include="Data\AI\InteractableFactionMember.cs" />
+    <Compile Include="Data\AI\InteractableInventory.cs" />
+    <Compile Include="Data\InteractableItem.cs" />
+    <Compile Include="Data\Blueprint\Item.cs" />
+    <Compile Include="Data\AI\InteractableTeamMember.cs" />
+    <Compile Include="Data\ItemBag.cs" />
+    <Compile Include="Data\Map.cs" />
+    <Compile Include="Data\Player.cs" />
+    <Compile Include="Data\Team.cs" />
+    <Compile Include="Data\Tileset.cs" />
+    <Compile Include="Services\Listeners\Host.cs" />
+    <Compile Include="Services\ScriptManager.cs" />
+    <Content Include="Certificates\server\password.txt" />
+    <Content Include="FSharp.Core.dll" />
+    <Content Include="Generators\Copy of Celtic-f.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Generators\Copy of Celtic-m.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Generators\Geordi.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="Generators\LanguageConfluxer.cs" />
+    <Compile Include="Generators\Werd.cs" />
+    <Compile Include="Services\GraphicsManager.cs" />
+    <Compile Include="Services\LogonManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Protocols\Client\Guild.Actions.cs" />
+    <Compile Include="Protocols\Client\Guild.cs" />
+    <Compile Include="Protocols\Client\Interactable.Actions.cs" />
+    <Compile Include="Protocols\Client\Interactable.cs" />
+    <Compile Include="Protocols\Client\Map.cs" />
+    <Compile Include="Services\MapManager.cs" />
+    <Compile Include="Protocols\Protocol.cs" />
+    <Compile Include="Protocols\Server\ExtendedServerProtocols.cs" />
+    <Compile Include="Protocols\Server\Interactables\Interactable.cs" />
+    <Compile Include="Protocols\Server\Misc\Misc.MapBroadcast.cs" />
+    <Compile Include="Protocols\Server\Misc\MiscAction.cs" />
+    <Compile Include="Protocols\Server\Misc\Misc.cs" />
+    <Compile Include="Protocols\Server\Misc\Misc.UserTransfer.cs" />
+    <Compile Include="Protocols\Server\PeerExchange.cs" />
+    <Compile Include="Protocols\Server\PeerExchangeAction.cs" />
+    <Compile Include="Protocols\Client\Player.Actions.cs" />
+    <Compile Include="Protocols\Client\Player.cs" />
+    <Compile Include="Protocols\Server\ServerProtocols.cs" />
+    <Compile Include="Services\Listeners\Registration.cs" />
+    <Compile Include="Services\Listeners\Servers.cs" />
+    <Compile Include="ProgramService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProgramServiceInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Listeners\Web.cs" />
+    <Content Include="IronJS.dll" />
+    <Content Include="IronJS.Runtime.dll" />
+    <Content Include="MongoDB.Bson.dll" />
+    <Content Include="MongoDB.Driver.dll" />
+    <None Include="app.config" />
+    <None Include="Certificates\protected\registration.cert">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Certificates\protected\ssl.crt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Certificates\protected\ssl.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Certificates\server\ssl.combined.pem">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Certificates\server\ssl.combined.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Certificates\server\ssl.crt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Certificates\server\ssl.decrypted.key">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Certificates\server\ssl.key">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Certificates\server\ssl.nodes.pem">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Certificates\server\ssl.pem">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Certificates\server\ssl.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Scripts\test.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EraUtils\ERAUtils.csproj">
+      <Project>{7349FF66-1666-44A0-A2B9-8C0DA03A85BD}</Project>
+      <Name>ERAUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lidgren.Network\Lidgren.Network.csproj">
+      <Project>{AE483C29-042E-4226-BA52-D247CE7676DA}</Project>
+      <Name>Lidgren.Network</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetworkLobby\Lidgren.Network.Lobby.csproj">
+      <Project>{46A4AE63-B570-41BF-8B56-5C0711260CBF}</Project>
+      <Name>Lidgren.Network.Lobby</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetworkProtocol\Project ERA Protocols.csproj">
+      <Project>{FC9F9B69-672E-4FD4-8676-97F102981E3B}</Project>
+      <Name>Project ERA Protocols</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleDigest\Simple Digest.csproj">
+      <Project>{B5D2A366-5F8B-4266-9C5F-06B6FC1F2BD7}</Project>
+      <Name>Simple Digest</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="testmap.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Generators\Celtic-f.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Generators\Celtic-m.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ProgramService.resx">
+      <DependentUpon>ProgramService.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
